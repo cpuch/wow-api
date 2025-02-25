@@ -21,6 +21,8 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'battlenet_id',
+        'battlenet_token',
     ];
 
     /**
