@@ -1,11 +1,15 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SocialiteController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/login', [SocialiteController::class, 'redirect'])->name('login');
+Route::get('/auth/callback', [SocialiteController::class, 'callback']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
