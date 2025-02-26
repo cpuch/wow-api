@@ -11,6 +11,8 @@
         "laravel/framework": "^11.31",
         "laravel/socialite": "^5.18",
         "laravel/tinker": "^2.9",
+        "saloonphp/laravel-plugin": "^3.0",
+        "saloonphp/saloon": "^3.0",
         "socialiteproviders/battlenet": "^4.1"
     },
     "require-dev": {
